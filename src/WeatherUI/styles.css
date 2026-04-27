@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(to right, #74ebd5, #acb6e5);
+    color: #333;
+}
+
+.container {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 25px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+}
+
+/* SEARCH */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+}
+
+.search-box button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    background: #ff9800;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.search-box button:hover {
+    background: #e68900;
+}
+
+/* HEADER */
+.header {
+    text-align: center;
+}
+
+.header h2 {
+    margin: 10px 0;
+    font-size: 32px;
+}
+
+#condition {
+    font-size: 20px;
+    opacity: 0.8;
+}
+
+/* CURRENT TEMP */
+.current-weather {
+    text-align: center;
+    margin: 25px 0;
+}
+
+.temp {
+    font-size: 70px;
+    font-weight: bold;
+    color: #ff9800;
+}
+
+/* FORECAST GRID */
+.forecast {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+/* CARD DESIGN */
+.card {
+    background: rgba(255,255,255,0.3);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.card h4 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    margin: 6px 0;
+}
+
+.max {
+    color: #ff3b3b;
+    font-weight: bold;
+}
+
+.min {
+    color: #007bff;
+    font-weight: bold;
+}

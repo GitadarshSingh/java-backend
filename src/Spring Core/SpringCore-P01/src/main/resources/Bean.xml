@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <bean id="petrolEng" class="org.cfs.PetrolEngine"></bean> <!--Called Bean Defination, and this is bean configuration file-->
+    <bean id="car" class="org.cfs.Car">
+        <!--<property name="engine" ref="petrolEng"></property>-->
+
+        <!--Constructor-->
+        <constructor-arg name="engine" ref="petrolEng"></constructor-arg>
+    </bean>
+
+</beans>
